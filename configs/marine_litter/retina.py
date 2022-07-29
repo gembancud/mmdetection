@@ -6,6 +6,7 @@ model = dict(
         bbox_head=dict(num_classes=1)
     )
 
+# asd
 # Modify dataset related settings
 dataset_type = 'COCODataset'
 classes = ('trash',)

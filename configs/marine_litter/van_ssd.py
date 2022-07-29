@@ -41,16 +41,16 @@ data = dict(
         ann_file='marine_litter/hydroflask/test/_annotations.coco.json')
     )
 
-log_config= dict(
-    hooks=[
-    dict(type='TextLoggerHook'),
-    dict(type='MMDetWandbHook',
-         init_kwargs={'project': 'marine_litter'},
-         interval=1,
-         log_checkpoint=False,
-         log_checkpoint_metadata=True,
-         num_eval_images=100)]
-)
+# log_config= dict(
+#     hooks=[
+#     dict(type='TextLoggerHook'),
+#     dict(type='MMDetWandbHook',
+#          init_kwargs={'project': 'marine_litter'},
+#          interval=1,
+#          log_checkpoint=False,
+#          log_checkpoint_metadata=True,
+#          num_eval_images=100)]
+# )
 
 # We can use the pre-trained Mask RCNN model to obtain higher performance
 load_from = 'checkpoints/ssd512_coco_20210803_022849-0a47a1ca.pth'

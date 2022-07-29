@@ -55,6 +55,5 @@ log_config= dict(
 )
 
 
-
 # We can use the pre-trained Mask RCNN model to obtain higher performance
 load_from = 'checkpoints/detr_r50_8x2_150e_coco_20201130_194835-2c4b8974.pth'
